@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack — Chhatija's</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark">C</span>
+          <div class="brand-text">
+            <span class="brand-name">Chhatija's</span>
+            <span class="brand-tagline">Street Treats &amp; Snacks</span>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="index.html#hero">Home</a>
+          <a href="index.html#menu">Menu</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div id="snack-root"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; <span id="year"></span> Chhatija's. All rights reserved.</span>
+        <span class="footer-note">Inspired by Indian street food culture.</span>
+      </div>
+    </footer>
+
+    <script src="snack.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
